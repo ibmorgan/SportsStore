@@ -22,14 +22,14 @@ namespace SportsStore.WebUI.Infrastructure
             return kernel.TryGet(serviceType);
         }
 
-        private void AddBindings()
-        {
-            throw new NotImplementedException();
-        }
-
         public IEnumerable<object> GetServices(Type serviceType)
         {
-            throw new NotImplementedException();
+            return kernel.GetAll(serviceType);
+        }
+
+        private void AddBindings()
+        {
+            // add bindings here
         }
     }
 }
