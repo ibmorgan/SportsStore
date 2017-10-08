@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SportsStore.Domain
+﻿namespace SportsStore.Domain.Entities
 {
-    class Product
+    public class Product
     {
         public int ProdcutID { get; set; }
         public string Name { get; set; }
