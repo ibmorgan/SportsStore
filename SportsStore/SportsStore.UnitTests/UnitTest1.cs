@@ -38,5 +38,11 @@ namespace SportsStore.UnitTests
             Assert.AreEqual(prodArray[0].Name, "P4");
             Assert.AreEqual(prodArray[1].Name, "P5");
         }
+
+        [TestMethod]
+        public void Can_Pagination_Work()
+        {
+
+        }
     }
 }
