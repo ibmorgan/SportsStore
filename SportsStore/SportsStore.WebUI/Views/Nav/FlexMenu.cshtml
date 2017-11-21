@@ -1,4 +1,5 @@
-﻿
+﻿@model  IEnumerable<string>
+
 @{
     bool horizontal = ((bool)(ViewContext.RouteData.Values["horizontalLayout"] ?? false));
     string wrapperClass = horizontal ? "btn-group btn-group-sm btn-group-justified" : null;
@@ -6,9 +7,10 @@
 
 <div class="@wrapperClass">
 
-    @Html.ActionLink("Home", "List", "Product",
+    @Html.ActionLink("Home", "List", "Product", null ,
         new { @class= horizontal ? "btn btn-default btn-sm" :
-        "btn btn-block btn-default btn-lg" })
+        "btn btn-block btn-default btn-lg"
+    })
 
     @foreach (var link in Model)
     {
