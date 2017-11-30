@@ -93,6 +93,7 @@
     <Compile Include="CartTests.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AdminSecurityTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -106,7 +107,7 @@
       <Name>SportsStore.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\SportsStore.WebUI\SportsStore.WebUI.csproj">
-      <Project>{A56D57DC-3CE3-4318-B928-363564B6C37E}</Project>
+      <Project>{a56d57dc-3ce3-4318-b928-363564b6c37e}</Project>
       <Name>SportsStore.WebUI</Name>
     </ProjectReference>
   </ItemGroup>
